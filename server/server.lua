@@ -39,7 +39,7 @@ AddEventHandler('Ouvre:taxi', function()
 	for i=1, #xPlayers, 1 do
 		local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
 		TriggerClientEvent('ox_lib:notify', _source, {
-			title = 'Venez gouter le meilleur taxi de la ville!',
+			title = 'Les taxis sont désormais ouverts!',
 			type = 'inform'
 		})
 	end
@@ -53,7 +53,7 @@ AddEventHandler('Ferme:taxi', function()
 	for i=1, #xPlayers, 1 do
 		local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
 		TriggerClientEvent('ox_lib:notify', _source, {
-			title = 'Le taxiron est désormais fermé à plus tard!',
+			title = 'Les taxis sont désormais fermés
 			type = 'inform'
 		})
 	end
